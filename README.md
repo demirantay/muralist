@@ -2,7 +2,7 @@
 
 # Muralist
 
-Muralist is a web application that lets you see algorithmic visualizations on famous paintings from the past. The app is built with just `html`, `css`, and `javascript`. Plus, the app does not have extremely complex algorithms since I wanted it to keep it simple for fast development.
+Muralist is a web application that lets you see algorithmic visualizations of famous paintings from the past. The app is built with just `html`, `css`, and `javascript`. Plus, the app does not have extremely complex algorithms since I wanted to keep it simple for fast development.
 
 Visit the site at: https://demirantay.github.io/muralist/
 
@@ -19,13 +19,13 @@ git clone https://github.com/demirantay/muralist.git
 
 Running:
 ```sh
-# Right click on muralist/index.html and run it in a browser of
+# Right-click on muralist/index.html and run it in a browser of
 # your preference (try to use google chrome).
 ```
 
 ### How to Use
 
-screen shots will be added later ...
+screenshots will be added later ...
 
 ### License
 
@@ -39,4 +39,4 @@ __Painters__: Leonardo Da Vinci, Johannes Vermeer, Vincent van Gogh, Gustav Klim
 
 ### Contributing
 
-Currently there is no strict standards for contributing, if you feel like adding something just open a pull request! Plus, this is built just for learning algorithms, there is not much to contribute to.
+Currently, there are no strict standards for contributing if you feel like adding something just open a pull request! Plus, this is built just for learning algorithms, there is not much to contribute.
