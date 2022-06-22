@@ -7,18 +7,36 @@
       css library (also start it along with this project)
 - [x] create logo for both of the projects
 - [x] add the logos to the readmes of both projects
-- [ ] write the readme for the css library too
-- [ ] Setting up the immediate readmes.
+- [x] write the readme for the css library too
+- [x] Setting up the immediate readmes.
 
 ---
 
-- [ ] list the features you want to use
-- [ ] list the algorithms and data structures you want to use
+- [x] list the features you want to use
+- [x] list the algorithms and data structures you want to use
 
 ---
 
-- [ ] ... (relist this after algorithm selections)
+- [ ] make the datastrcutrues responsive as well
 
+- [ ] DS: right image tiles
+- [x] DS: Image info sheet
+- [ ] DS: left - start button
+- [ ] DS: left - reset button
+- [ ] DS: left - randomize button
+- [ ] DS: left - algorithms
+- [ ] DS: left - speed
+- [ ] DS: left - tile division
+
+
+- [ ] algo: right image tiles
+- [ ] algo: image info sheet
+- [ ] algo: left - start button
+- [ ] algo: left - algorithms
+- [ ] algo: left - speed
+- [ ] algo: tile division
+- [ ] algo: left - reset button
+- [ ] algo: left - randomize button
 
 ---
 

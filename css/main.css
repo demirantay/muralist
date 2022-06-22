@@ -1,0 +1,56 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto';
+}
+
+.wrapper {
+  border: 1px solid transparent;
+  margin: 4vh 10%;
+}
+
+.left-part {
+  border: 1px solid #EAEDED;
+  vertical-align: top;
+  display: inline-block;
+  width: 35%;
+  margin-right: 3%;
+  height: 90vh;
+  border-radius: 6px;
+}
+
+.right-part {
+  border: 1px solid transparent;
+  vertical-align: top;
+  display: inline-block;
+  width: 58%;
+}
+
+.image-holder {
+  background-color: #EAEDED;
+  border-radius: 6px;
+  height: 60vh;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url('../image/raftofmedusa.jpg');
+}
+
+.image-info {
+  border: 1px solid transparent;
+  border-radius: 6px;
+  height: auto;
+  margin-top: 1vh;
+  padding: 10px 12px;
+}
+
+.image-info h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+  font-weight: 900;
+}
+
+.image-info p {
+  font-size: 13px;
+}
