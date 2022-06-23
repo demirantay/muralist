@@ -17,28 +17,29 @@
 
 ---
 
-- [ ] make the datastrcutrues responsive as well
+- [x] make the datastrcutrues responsive as well
 
-- [ ] DS: right image tiles
 - [x] DS: Image info sheet
-- [ ] DS: left - start button
-- [ ] DS: left - reset button
-- [ ] DS: left - randomize button
+- [x] DS: left - start button
+- [x] DS: left - reset button
+- [x] DS: left - randomize button
 - [ ] DS: left - algorithms
-- [ ] DS: left - speed
+- [x] DS: left - speed
 - [ ] DS: left - tile division
 - [ ] DS: left - image selection
+- [ ] DS: right image tiles
+- [x] DS: algo info sheet
 
-
-- [ ] algo: right image tiles
 - [ ] algo: image info sheet
 - [ ] algo: left - start button
 - [ ] algo: left - algorithms
 - [ ] algo: left - speed
+- [ ] algo: algo info sheet
 - [ ] algo: tile division
 - [ ] algo: left - reset button
 - [ ] algo: left - randomize button
 - [ ] algo: left - image selection
+- [ ] algo: right image tiles
 
 ---
 
