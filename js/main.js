@@ -35,6 +35,8 @@ var radix_sort = document.getElementById("radix_sort");
 
 // Node: Selected Image and Text
 
+// ...
+
 // Node: Info Sheet
 var painting_info = document.getElementById("painting_info");
 var algorithm_info = document.getElementById("algorithm_info");
@@ -87,7 +89,65 @@ speed_8x.onclick = function(event) {
   alert("speed 8x");
 }
 
-
 // Algo: Tile Division
 
 // Algo: Selected Algorithm
+bubble_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("bubble sort");
+}
+
+selection_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("selection sort");
+}
+
+
+insertion_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("insertion sort");
+}
+
+
+heap_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("heap sort");
+}
+
+
+merge_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("merge sort");
+}
+
+quick_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("quick sort");
+}
+
+
+shell_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("shell sort");
+}
+
+
+counting_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("counting sort");
+}
+
+
+radix_sort.onclick = function(event) {
+  event.preventDefault();
+  alert("radix sort");
+}
+
+
+// ---------------------------------------------------------------------
+
+// Algorithms
+
+// Bubble Sort
+
+//

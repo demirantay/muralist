@@ -23,12 +23,22 @@
 - [x] DS: left - start button
 - [x] DS: left - reset button
 - [x] DS: left - randomize button
-- [ ] DS: left - algorithms
+- [x] DS: left - algorithms
 - [x] DS: left - speed
 - [ ] DS: left - tile division
 - [ ] DS: left - image selection
-- [ ] DS: right image tiles
+- [x] DS: right image tiles
 - [x] DS: algo info sheet
+
+- [ ] bubble sort
+- [ ] selection sort
+- [ ] insertion sort
+- [ ] heap sort
+- [ ] merge sort
+- [ ] quick sort
+- [ ] shell sort
+- [ ] counting sort
+- [ ] radix sort
 
 - [ ] algo: image info sheet
 - [ ] algo: left - start button
