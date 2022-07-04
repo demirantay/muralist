@@ -4,6 +4,7 @@
 var info_sheet = document.getElementById("info_sheet");
 var info_sheet_header = document.getElementById("info_sheet_header");
 var info_sheet_text = document.getElementById("info_sheet_text");
+var image_holder = document.getElementById("image-holder-id");
 
 // Node: Start
 var start_button = document.getElementById("start-btn");
@@ -118,11 +119,32 @@ function insertionSort(inputArr) {
     return inputArr;
 }
 
-alert(insertionSort(test_arr));
+// Merge Sort
+function merge(left, right) {
+    let arr = []
+    while (left.length && right.length) {
+        if (left[0] < right[0]) {
+            arr.push(left.shift())
+        } else {
+            arr.push(right.shift())
+        }
+    }
+    return [ ...arr, ...left, ...right ]
+}
+
+function mergeSort(array) {
+  const half = array.length / 2
+
+  // Base case or terminating case
+  if(array.length < 2){
+    return array
+  }
+
+  const left = array.splice(0, half)
+  return merge(mergeSort(left),mergeSort(array))
+}
 
 // Heap Sort
-
-// Merge Sort
 
 // Quick sort
 
@@ -162,7 +184,7 @@ reset_button.onclick = function() {
 // Algo: Speed
 speed_1x.onclick = function(event) {
   event.preventDefault();
-  alert("speed 1x");
+  alert("speed 1x")
 }
 
 speed_2x.onclick = function(event) {
@@ -234,92 +256,167 @@ radix_sort.onclick = function(event) {
   alert("radix sort");
 }
 
+// Start State
+// ...!!!
+
 // Image Object Clicks
 img_1.onclick = function(event) {
   event.preventDefault();
-  alert("img 1");
+  image_holder.style.backgroundImage="url(image/img_1.jpg)";
+  info_sheet_header.innerHTML = "Leonardo Da Vinci, Mona Lisa, 1503–19";
+  info_sheet_text.innerHTML = "Painted between 1503 and 1517, Da Vinci’s  \
+  alluring portrait has been dogged by two questions since the day it was \
+  made: Who’s the subject and why is she smiling? A number of theories for\
+   the former have been proffered over the years: That she’s the wife of  \
+   the Florentine merchant Francesco di Bartolomeo del Giocondo (ergo, the \
+     work’s alternative title, La Gioconda); that she's Leonardo’s mother, \
+     Caterina, conjured from Leonardo's boyhood memories of her; and finally, \
+     that it's a self-portrait in drag. As for that famous smile, its \
+     enigmatic quality has driven people crazy for centuries. Whatever the \
+     reason, Mona Lisa’s look of preternatural calm comports with the idealized\
+      landscape behind her, which dissolves into the distance through \
+      Leonardo’s use of atmospheric perspective."
 }
+
 img_2.onclick = function(event) {
   event.preventDefault();
-  alert("img_2 1");
+  image_holder.style.backgroundImage= "url(image/img_2.jpg)";
+  info_sheet_header.innerHTML = "Johannes Vermeer, Girl with a Pearl Earring, 1665";
+  info_sheet_text.innerHTML = "Johannes Vermeer’s 1665 study of a young woman \
+  is startlingly real and startlingly modern, almost as if it were a photograph.\
+   This gets into the debate over whether or not Vermeer employed a pre-photogra\
+   phic device called a camera obscura to create the image. Leaving that aside, \
+   the sitter is unknown, though it’s been speculated that she might have been V\
+   ermeer's maid. He portrays her looking over her shoulder, locking her eyes wi\
+   th the viewer as if attempting to establish an intimate connection across the\
+    centuries. Technically speaking, Girl isn’t a portrait, but rather an exampl\
+    e of the Dutch genre called a tronie—a headshot meant more as still life of \
+    facial features than as an attempt to capture a likeness.";
 }
+
 img_3.onclick = function(event) {
   event.preventDefault();
-  alert("img_3 1");
+  image_holder.style.backgroundImage="url(image/img_3.jpg)";
+  info_sheet_header.innerHTML = "Vincent van Gogh, The Starry Night, 1889";
+  info_sheet_text.innerHTML = "Vincent Van Gogh’s most popular painting, The Sta\
+  rry Night was created by Van Gogh at the asylum in Saint-Rémy, where he’d comm\
+  itted himself in 1889. Indeed, The Starry Night seems to reflect his turbulent\
+   state of mind at the time, as the night sky comes alive with swirls and orbs \
+   of frenetically applied brush marks springing from the yin and yang of his pe\
+   rsonal demons and awe of nature.";
 }
+
 img_4.onclick = function(event) {
   event.preventDefault();
-  alert("img_4 1");
+  image_holder.style.backgroundImage="url(image/img_4.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_5.onclick = function(event) {
   event.preventDefault();
-  alert("img_5 1");
+  image_holder.style.backgroundImage="url(image/img_5.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_6.onclick = function(event) {
   event.preventDefault();
-  alert("img_6 1");
+  image_holder.style.backgroundImage="url(image/img_6.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_7.onclick = function(event) {
   event.preventDefault();
-  alert("img_7 1");
+  image_holder.style.backgroundImage="url(image/img_7.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_8.onclick = function(event) {
   event.preventDefault();
-  alert("img_8 1");
+  image_holder.style.backgroundImage="url(image/img_8.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_9.onclick = function(event) {
   event.preventDefault();
-  alert("img_9 1");
+  image_holder.style.backgroundImage="url(image/img_9.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_10.onclick = function(event) {
   event.preventDefault();
-  alert("img_10 1");
+  image_holder.style.backgroundImage="url(image/img_10.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_11.onclick = function(event) {
   event.preventDefault();
-  alert("img_11 1");
+  image_holder.style.backgroundImage="url(image/img_11.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_12.onclick = function(event) {
   event.preventDefault();
-  alert("img_12 1");
+  image_holder.style.backgroundImage="url(image/img_12.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_13.onclick = function(event) {
   event.preventDefault();
-  alert("img_13 1");
+  image_holder.style.backgroundImage="url(image/img_13.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_14.onclick = function(event) {
   event.preventDefault();
-  alert("img_14 1");
+  image_holder.style.backgroundImage="url(image/img_14.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_15.onclick = function(event) {
   event.preventDefault();
-  alert("img_15 1");
+  image_holder.style.backgroundImage="url(image/img_15.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_16.onclick = function(event) {
   event.preventDefault();
-  alert("img_16 1");
+  image_holder.style.backgroundImage="url(image/img_16.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_17.onclick = function(event) {
   event.preventDefault();
-  alert("img_17 1");
+  image_holder.style.backgroundImage="url(image/img_17.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_18.onclick = function(event) {
   event.preventDefault();
-  alert("img_18 1");
+  image_holder.style.backgroundImage="url(image/img_18.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_19.onclick = function(event) {
   event.preventDefault();
-  alert("img_19 1");
+  image_holder.style.backgroundImage="url(image/img_19.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_20.onclick = function(event) {
   event.preventDefault();
-  alert("img_20 1");
+  image_holder.style.backgroundImage="url(image/img_20.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_21.onclick = function(event) {
   event.preventDefault();
-  alert("img21 1");
+  image_holder.style.backgroundImage="url(image/img_21.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
 img_22.onclick = function(event) {
   event.preventDefault();
-  alert("img22 1");
+  image_holder.style.backgroundImage="url(image/img_22.jpg)";
+  info_sheet_header.innerHTML = "test";
+  info_sheet_text.innerHTML = "test";
 }
