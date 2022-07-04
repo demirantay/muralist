@@ -29,7 +29,7 @@ screenshots will be added later ...
 
 ### License
 
-This project is MIT licensed. Do whatever you want with it. However, be aware that I do claim any responsibility.
+This project is MIT licensed. Do whatever you want with it. However, be aware that I do not claim any responsibility.
 
 ### Credits
 

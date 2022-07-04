@@ -26,13 +26,13 @@
 - [x] DS: left - algorithms
 - [x] DS: left - speed
 - [x] DS: left - tile division
-- [ ] DS: left - image selection
+- [x] DS: left - image selection
 - [x] DS: right image tiles
 - [x] DS: algo info sheet
 
-- [ ] bubble sort
-- [ ] selection sort
-- [ ] insertion sort
+- [x] bubble sort
+- [x] selection sort
+- [x] insertion sort
 - [ ] heap sort
 - [ ] merge sort
 - [ ] quick sort
@@ -40,6 +40,7 @@
 - [ ] counting sort
 - [ ] radix sort
 
+- [ ] algo: left - image selection
 - [ ] algo: image info sheet
 - [ ] algo: left - start button
 - [ ] algo: left - algorithms
@@ -48,7 +49,6 @@
 - [ ] algo: tile division
 - [ ] algo: left - reset button
 - [ ] algo: left - randomize button
-- [ ] algo: left - image selection
 - [ ] algo: right image tiles
 
 ---
