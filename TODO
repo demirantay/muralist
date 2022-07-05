@@ -42,13 +42,13 @@
 
 - [x] algo: left - image selection
 - [x] algo: image info sheet
-- [ ] algo: left - algorithms
-- [ ] algo: left - speed
+- [x] algo: left - algorithms
+- [x] algo: left - speed
 - [ ] algo: algo info sheet
-- [ ] algo: tile division
-- [ ] algo: left - start button
 - [ ] algo: left - reset button
 - [ ] algo: left - randomize button
+- [ ] algo: tile division
+- [ ] algo: left - start button
 - [ ] algo: right image tiles
 
 ---

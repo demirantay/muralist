@@ -58,7 +58,6 @@ var img_20 = document.getElementById("img_20");
 var img_21 = document.getElementById("img_21");
 var img_22 = document.getElementById("img_22");
 
-
 // Node: Info Sheet
 var painting_info = document.getElementById("painting_info");
 var algorithm_info = document.getElementById("algorithm_info");
@@ -159,8 +158,13 @@ function mergeSort(array) {
 // NODE'S ALGORITHMS
 // ###########################################################################
 
-// Start State
-
+// Run State
+var run_state = {
+  algorithm: undefined,
+  speed: undefined,
+  painting: undefined,
+  division: undefined
+};
 
 // Algo: Image Tiles
 
@@ -168,7 +172,7 @@ function mergeSort(array) {
 
 // Algo: Start
 start_button.onclick = function() {
-  alert("start");
+  console.log(run_state);
 }
 
 // Algo: Randomize
@@ -186,22 +190,26 @@ reset_button.onclick = function() {
 // Algo: Speed
 speed_1x.onclick = function(event) {
   event.preventDefault();
-  alert("speed 1x")
+  run_state.speed = "1x";
+  speed_info.innerHTML = "1x";
 }
 
 speed_2x.onclick = function(event) {
   event.preventDefault();
-  alert("speed 2x");
+  run_state.speed = "2x";
+  speed_info.innerHTML = "2x";
 }
 
 speed_4x.onclick = function(event) {
   event.preventDefault();
-  alert("speed 4x");
+  run_state.speed = "4x";
+  speed_info.innerHTML = "4x";
 }
 
 speed_8x.onclick = function(event) {
   event.preventDefault();
-  alert("speed 8x");
+  run_state.speed = "8x";
+  speed_info.innerHTML = "8x";
 }
 
 // Algo: Tile Division
@@ -209,58 +217,63 @@ speed_8x.onclick = function(event) {
 // Algo: Selected Algorithm
 bubble_sort.onclick = function(event) {
   event.preventDefault();
-  alert("bubble sort");
+  run_state.algorithm = "bubble_sort";
+  algorithm_info.innerHTML = "Bubble Sort";
 }
 
 selection_sort.onclick = function(event) {
   event.preventDefault();
-  alert("selection sort");
+  run_state.algorithm = "selection_sort";
+  algorithm_info.innerHTML = "Selection Sort";
 }
-
 
 insertion_sort.onclick = function(event) {
   event.preventDefault();
-  alert("insertion sort");
+  run_state.algorithm = "insertion_sort";
+  algorithm_info.innerHTML = "Insertion Sort";
 }
-
 
 heap_sort.onclick = function(event) {
   event.preventDefault();
-  alert("heap sort");
+  run_state.algorithm = "heap_sort";
+  algorithm_info.innerHTML = "Heap Sort";
 }
 
 
 merge_sort.onclick = function(event) {
   event.preventDefault();
-  alert("merge sort");
+  run_state.algorithm = "merge_sort";
+  algorithm_info.innerHTML = "Merge Sort";
 }
 
 quick_sort.onclick = function(event) {
   event.preventDefault();
-  alert("quick sort");
+  run_state.algorithm = "quick_sort";
+  algorithm_info.innerHTML = "Quick Sort";
 }
-
 
 shell_sort.onclick = function(event) {
   event.preventDefault();
-  alert("shell sort");
+  run_state.algorithm = "shell_sort";
+  algorithm_info.innerHTML = "Shell Sort";
 }
-
 
 counting_sort.onclick = function(event) {
   event.preventDefault();
-  alert("counting sort");
+  run_state.algorithm = "counting_sort";
+  algorithm_info.innerHTML = "Counting Sort";
 }
-
 
 radix_sort.onclick = function(event) {
   event.preventDefault();
-  alert("radix sort");
+  run_state.algorithm = "radix_sort";
+  algorithm_info.innerHTML = "Radix Sort";
 }
 
 // Image Object Clicks
 img_1.onclick = function(event) {
   event.preventDefault();
+  painting_info.innerHTML = "Mona Lisa";
   image_holder.style.backgroundImage="url(image/img_1.jpg)";
   info_sheet_header.innerHTML = "Leonardo Da Vinci, Mona Lisa, 1503–19";
   info_sheet_text.innerHTML = "Painted between 1503 and 1517, Da Vinci’s  \
@@ -274,7 +287,7 @@ img_1.onclick = function(event) {
      enigmatic quality has driven people crazy for centuries. Whatever the \
      reason, Mona Lisa’s look of preternatural calm comports with the idealized\
       landscape behind her, which dissolves into the distance through \
-      Leonardo’s use of atmospheric perspective."
+      Leonardo’s use of atmospheric perspective.";
 }
 
 img_2.onclick = function(event) {
