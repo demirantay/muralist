@@ -40,13 +40,13 @@
 - [ ] counting sort
 - [ ] radix sort
 
-- [ ] algo: left - image selection
-- [ ] algo: image info sheet
-- [ ] algo: left - start button
+- [x] algo: left - image selection
+- [x] algo: image info sheet
 - [ ] algo: left - algorithms
 - [ ] algo: left - speed
 - [ ] algo: algo info sheet
 - [ ] algo: tile division
+- [ ] algo: left - start button
 - [ ] algo: left - reset button
 - [ ] algo: left - randomize button
 - [ ] algo: right image tiles
